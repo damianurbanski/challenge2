@@ -1,0 +1,205 @@
+body{
+	font-family: 'Raleway Heavy', sans-serif;
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+/* bootstrap nav */
+.navbar-custom{
+padding: 55px 40px;
+padding-bottom: 16px;
+border:none;
+}
+.navbar-brand{
+	padding: 0;
+}
+.navbar-brand img{
+	max-height: 125px;
+}
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+	background-color: #ffffff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border-radius: 4px;
+  }
+}
+.navbar-nav li{
+	position: relative;
+	padding: 10px 15px;
+}
+.navbar-nav li a{
+	padding: 5px 0;
+	text-transform: uppercase;
+	color: #262626;
+	font-weight: bold;
+	position: relative;
+	font-size: 17px;
+}
+@media screen and (max-width: 768px) {
+	.navbar-nav li{
+		padding: 12px;
+	}
+	.navbar-nav li a{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+}
+.navbar-nav li a:hover, .navbar-nav li a:focus, .navbar-nav li a:active{
+	background-color: transparent;
+}
+.navbar-custom li.active a::before{
+	display: block;
+	content: "";
+	position: absolute;
+	top: -12px;
+	width: 100%;
+	height: 3px;
+    background: #ff6033;
+}
+@media screen and (max-width: 768px) {
+.navbar-nav li.active a{color: #ff6033;}
+.navbar-custom li.active a::before{display: none;}
+}
+.navbar-toggle .icon-bar{
+	background: #262626;
+}
+
+
+/* md box shadows */
+.bs-1 {}
+.bs-2 {box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+.bs-3{box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+.bs-4{box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+.bs-5{box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
+
+
+/* main header */
+.main-header{
+	color: #262626;
+	min-height: 100vh;
+	background:url(../img/header-bg.png);
+	background-repeat: no-repeat;
+	padding-top: 268px;
+}
+@media screen and (max-width: 768px) {
+  .main-header {
+	padding-top: 228px;
+  	background-position: 56% -8%;
+  }
+}
+
+.main-header__title{
+	font-size: 60px;
+	font-weight: 900;
+	margin-bottom: 24px;
+}
+.main-header__description{
+	font-size: 17px;
+	margin-bottom: 24px;
+}
+.main-header__icon-scroll{
+	position: absolute;
+	width:	24px;
+	height: 24px;
+	bottom: 16px;
+	background: url(../img/icon-mouse.svg);
+	margin:0 auto;
+	left:0;right: 0;
+	opacity: 0.6;
+}
+.btn{
+	border-radius: 0;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.btn-cta{
+	padding: 20px 25px;
+	color: #ffffff;
+	background-color: #ff6033;
+}
+.btn-cta:hover, .btn-cta:focus, .btn-cta:active{
+	color:#ffffff;
+	background: #e44518;
+}
+
+.section{
+color: #ffffff;
+min-height: 600px;
+background-repeat: no-repeat;
+}
+.section__title{
+	font-size:72px;
+}
+.section__desc{
+	font-size:15px;
+}
+.section--about{
+	background-image: url(../img/about.png);
+	background-color: #00b1b1;
+	background-position: 22% center;
+	display: flex;
+	align-items: center;
+	background-size: 500px;
+}
+
+.section--services{
+	background-color: #70bfff;
+	display: flex;
+	align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .section--services {
+  	flex-direction:	column-reverse;
+  }
+}
+.services--bg{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(../img/services.png);
+	background-position: 72% center;
+	background-size: contain;
+	height: 400px;
+	background-repeat: no-repeat;
+}
+.service-list{
+	padding: 0;
+	list-style-type: none;
+}
+.service-list__item{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0;
+	color:#262626;
+	background-color: #fff;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	margin-top: 26px;
+}
+.service-list__icon{
+	padding: 24px 36px;
+}
+.service-list__name{
+	padding: 0 24px;
+	flex: 1;
+	align-items: center;
+	text-align: center;
+	font-weight: bold;
+}
+.service-list__icon{
+	height: 100%;
+	border-left: 1px solid #666;
+}
+.service-list__icon img{
+	width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .section--services-row {
+  	display: flex;
+  	flex-direction: column-reverse;
+  }
+  .service-list__name{
+  	font-size:16px;
+  }
+}
