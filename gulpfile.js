@@ -15,10 +15,8 @@ gulp.task('css', () => {
 
 gulp.task('js', () => {
 	return gulp.src(['js/**/*.js', '!js/**/*.min.js'])
+	.pipe(concat('main.min.js'))
 	.pipe(uglify())
-	     .pipe(rename({
-     	suffix: '.min'
-     }))
 	.pipe(gulp.dest('./js'))
 });
 

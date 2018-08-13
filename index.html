@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Challenge #2</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
@@ -8,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/global.min.css">
 </head>
 <body>
+
 <nav id="nav-main" class="navbar navbar-fixed-top navbar-custom">
 	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
 		<span class="sr-only">Toggle navigation</span>
@@ -31,19 +33,23 @@
 		</div>
     </div>
 </nav>
+
+
+
 <main class="main">
-	<header class="main-header">
-		<div class="col-lg-3 col-lg-push-1">
+	<header id="home" class="main-header nav-trigger">
+		<div class="col-md-3 col-md-push-1">
 			<h1 class="main-header__title">Fresh Life</h1>
 			<p class="main-header__description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 			<a href="#" class="btn btn-lg btn-cta">GET FREE NOW</a>
 		</div>
 		<div class="main-header__icon-scroll"></div>
 	</header>
-	<section id="about" class="section section--about">
+
+	<section id="about" class="section section--about nav-trigger">
 	<div class="container">
 
-		<div class="col-lg-6 col-lg-offset-6">
+		<div class="col-sm-6 col-sm-offset-6">
 			<h2 class="section__title">About Us</h2>
 			<div class="section__desc">
 				<p>
@@ -56,7 +62,8 @@
 		</div>
 	</div>
 	</section>
-	<section id="services" class="section section--services">
+	
+	<section id="services" class="section section--services nav-trigger">
 			<div class="container">
 				<div class="row section--services-row">
 					<div class="col-lg-5 col-lg-offset-1 col-md-6">
@@ -93,7 +100,8 @@
 				</div>
 			</div>
 	</section>
-	<section id="gallery" class="section section--gallery">
+
+	<section id="gallery" class="section section--gallery nav-trigger">
 		<header>
 			<h2 class="section__title">Gallery</h2>
 			<div class="section__desc--center">
@@ -102,9 +110,9 @@
 		</header>
 		<div class="container gallery__wrapper">
 		<div class="row">
-			<div class="col-xs-8 gallery__item"><img src="img/gallery-1.jpg" class="" alt="image"></div>
-			<div class="col-xs-4 gallery__item"><img src="img/gallery-2.jpg" alt="image"></div>
-			<div class="col-xs-4 gallery__item"><img src="img/gallery-3.jpg" alt="image"></div>
+			<div class="col-md-8 col-xs-12 gallery__item"><img src="img/gallery-1.jpg" class="" alt="image"></div>
+			<div class="col-md-4 col-xs-6 gallery__item"><img src="img/gallery-2.jpg" alt="image"></div>
+			<div class="col-md-4 col-xs-6 gallery__item"><img src="img/gallery-3.jpg" alt="image"></div>
 		</div>
 		<div class="row">
 			<div class="col-xs-6 gallery__item"><img src="img/gallery-4.jpg" alt="image"></div>
@@ -113,11 +121,12 @@
 		</div>
 		<button class="btn btn-lg btn-info">VIEW MORE</button>
 	</section>
-	<section id="subscribe" class="section--subscribe">
+
+	<section id="subscribe" class="section section--subscribe">
 		<div class="container">
 		<div class="col-md-7">
 			<h2 class="section__title">Subscribe To Us</h2>
-			<div class="section__desc">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+			<div class="section__desc"><p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p></div>
 			<div class="subscribe-form">
 				<form action="#">
 				<input type="text" name="email" id="email" class="subscribe-input" placeholder="Your email address...">
@@ -127,8 +136,101 @@
 		</div>
 		</div>
 	</section>
-</main>
 
+	<section id="blog" class="section section--blog nav-trigger">
+		<div class="container">
+			<h2 class="section__title text-center">Blog</h2>
+			<div class="section__desc--center"><p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p></div>
+			<div class="row">
+				<div class="col-md-4">
+				<a href="#" class="article__link">
+				<article class="article" style="background-image:url(img/blog-1.jpg);">
+					<div class="article__date">
+					<span>20</span>
+					<span>NOV</span>
+					</div>
+					<header class="article__header">
+						<h3>Green Smoothies: Too Much of a Good Thing?</h3>
+					</header>
+					<footer class="article__footer">By Auskteez - 2 hours ago</footer>
+				</article>
+				</a>
+				</div>
+				<div class="col-md-4">
+				<a href="#" class="article__link">
+				<article class="article" style="background-image:url(img/blog-2.jpg);">
+					<div class="article__date">
+					<span>10</span>
+					<span>NOV</span>
+					</div>
+					<header class="article__header">
+						<h3>Growing Food and a "Thirst" for Innovation</h3>
+					</header>
+					<footer class="article__footer">By Auskteez - 3 hours ago</footer>
+				</article>
+				</a>
+				</div>
+				<div class="col-md-4">
+				<a href="#" class="article__link">
+				<article class="article" style="background-image:url(img/blog-3.jpg);">
+					<div class="article__date">
+					<span>14</span>
+					<span>NOV</span>
+					</div>
+					<header class="article__header">
+						<h3>Green Smoothies: Too Much of a Good Thing?</h3>
+					</header>
+					<footer class="article__footer">By Auskteez - 2 hours ago</footer>
+				</article>
+				</a>
+				</div>
+			</div>
+			<div class="text-center">
+				<button class="btn btn-warning section-blog__btn">VIEW MORE</button>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="section section--contact nav-trigger">
+	<div class="container">
+			<h2 class="section__title text-center">Contact</h2>
+			<div class="section__desc--center"><p>For new projects, ideas, business or anything
+you'd like to discuss, contact with me!</p></div>
+			<div class="row">
+				<div class="col-md-5">
+					<div class="form-contact">
+						<form action="#">
+							<input class="form-contact__input" type="text" name="name" placeholder="Your name...">
+							<input class="form-contact__input" type="email" name="email" placeholder="Your email...">
+							<input class="form-contact__input" type="text" name="phone" placeholder="Your phone number...">
+							<textarea class="form-contact__input" rows="4" placeholder="Your message..."></textarea>
+							<!-- who need to submit? -->
+						</form>
+					</div>
+				</div>
+				<div class="col-md-5 col-md-push-1">
+					<div class="contact-info">
+						<h3 class="contact-info__title">Address</h2>
+						<p class="contact-info__content">123 City name, Street, City, Country</p>
+					</div>
+					<div class="contact-info">
+						<h3 class="contact-info__title">Email</h2>
+						<p class="contact-info__content">cahee@domain.com</p>
+					</div>
+					<div class="contact-info">
+						<h3 class="contact-info__title">Phone</h2>
+						<p class="contact-info__content">+012 345 6789</p>
+					</div>
+				</div>
+			</div>
+	</div>
+	</section>
+</main>
+<footer class="main-footer">
+	<div class="col-md-4">&copy; 2015 Company. All right served.</div>
+	<div class="col-md-4"><img class="main-footer__logo" src="img/logo-white.svg" alt="Brand logo"></div>
+	<div class="col-md-4">Made with <span class="attention">love</span> by Auskteez</div>
+</footer>
 <!-- scripts -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
